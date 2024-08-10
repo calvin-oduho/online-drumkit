@@ -1,6 +1,12 @@
 
+
 var button = document.querySelectorAll(".drum");
 var numOfDrumButtons = button.length;
+
+const year = new Date().getFullYear();
+document.querySelector(".currentYear").innerHTML = year;
+
+
 
 //Listens to button events
 for( var i = 0; i < numOfDrumButtons; i++ ) {
